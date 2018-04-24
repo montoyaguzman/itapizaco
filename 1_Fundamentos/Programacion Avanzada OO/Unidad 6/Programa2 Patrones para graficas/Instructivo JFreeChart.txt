@@ -1,0 +1,4 @@
+1. En un nuevo proyecto de netbeans (o cualquier entorno) agregar todas las librerias ubicadas en
+//jfree-chart-1.0.14//lib
+
+

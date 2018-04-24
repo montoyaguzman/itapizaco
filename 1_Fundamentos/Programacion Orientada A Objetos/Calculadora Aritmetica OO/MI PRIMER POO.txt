@@ -1,0 +1,68 @@
+import java.io;
+public class CalculadoraAritmetica
+{
+	private float num1;
+	private float num2;
+	private float resultado;
+	private char operacion;
+
+	//Metodos de entrada
+	void eligeOperacion(char x)
+	{
+		operacion=x;
+	}
+		void realizaOperacion()
+		{
+			float a,b;
+			BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+			
+			switch(operacion)
+			{
+			 	
+				case 1:
+				{
+			 	
+			 	}
+			 	break;
+				case 2:
+			 	{
+			 
+				}
+			 	break;
+			 	case 3:
+			 	{
+			 
+			 	}
+			 	break;
+				case 4:
+				{
+				
+				}
+			}
+	
+	void LeeNumero1 (float a);
+	{
+		num1=a;
+	}
+	void LeeNumero1 (float b);
+	{
+		num2=b;
+	}
+	void realizaSuma ();
+	{
+	resp=num1+num2;
+	}
+	void realizaResta ();
+	{
+	resp=num1-num2;
+	}
+	void realizaMultiplicacion ();
+	{
+	resp=num1*num2;
+	}
+	void realizaDivision ();
+	{
+	resp=num1/num2;
+	}
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bubbling</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+	<!--
+		<button onclick="clic()">onclick</button>
+		<button onmouseover="clic()">onmouseover</button>
+		<button onmouseout="clic()">onmouseout</button>
+	-->
+		<div id="midiv">
+			<button id="boton1">clic2</button>
+		</div>
+		
+		<script>
+			
+			document.getElementById("midiv").addEventListener("click",clic,false);
+			document.getElementById("boton1").addEventListener("click",clic2,true);
+			
+			function clic(){
+				alert("Hola div!!");
+			}
+
+			function clic2(){
+				alert("Hola boton!!");
+			}
+
+		</script>	
+	
+	</body>
+</html>

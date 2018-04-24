@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script src="jarea.js"></script>
+	</head>
+	
+	<body>
+		<form action="#" method="post"> 
+			<div id="div1">
+				Texto:
+				<textarea cols="40" rows="5" id="cajainput" onKeyUp="valida_longitudTexto();"></textarea> 
+				<!--<input type="text" id="textoContador" size=4>-->
+			</div> 
+			
+			<div id="capaDos">
+				Texto:
+				<textarea cols="40" rows="5" id="textoJose" onKeyUp="valida_longitudText2();"></textarea> 
+				<!--<input type="text" id="textoContador" size=4>-->
+			</div> 
+			
+			<div id="casdf">
+				Texto:
+				<textarea cols="40" rows="5" id="Isabel" onKeyUp="valida_longitudText3();"></textarea> 
+				<!--<input type="text" id="textoContador" size=4>-->
+			</div> 
+		</form>
+		
+		<script>
+			valida_longitudTexto();
+			valida_longitudText2();
+			valida_longitudText3();
+		
+			function valida_longitudTexto() {
+				valida_longitud('div1', 'cajainput',5);
+			}
+			
+			function valida_longitudText2() {
+				valida_longitud('capaDos', 'textoJose',20);
+			}
+			
+			function valida_longitudText3() {
+				valida_longitud('casdf', 'Isabel',2);
+			}
+		</script>
+		
+	</body>
+</html>

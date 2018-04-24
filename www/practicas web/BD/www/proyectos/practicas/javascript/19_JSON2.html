@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JSON</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+		
+		<p id="demo"></p>
+
+		<script>
+			var text = '{"employees":[' +
+			'{"firstName":"John","lastName":"Doe" },' +
+			'{"firstName":"Anna","lastName":"Smith" },' +
+			'{"firstName":"Peter","lastName":"Jones" }]}';
+			
+			lectura(text);
+
+			function lectura(text){
+				obj = JSON.parse(text);
+				var parrafo = document.getElementById("demo");
+				for (var i = 0; i<3; i++)
+			    {
+			    	parrafo.innerHTML = parrafo.innerHTML + obj.employees[i].firstName + " " + obj.employees[i].lastName+"<br/>";
+			    	//console.log(obj.employees[i].firstName + " " + obj.employees[i].lastName);
+				}
+			}
+		</script>
+		
+	</body>
+</html>
+

@@ -1,0 +1,40 @@
+INSTALACION
+
+npm install -g nativescript
+tns
+NativeScript
+
+
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/NativeScript/nativescript-cli/production/setup/native-script.ps1'))"
+
+
+
+SETUP APP
+
+cd /proyectoNative
+git clone https://github.com/NativeScript/sample-Groceries.git
+cd/example-Groceries
+tns platform add ios
+tns platform add android
+
+
+ANDROID_HOME
+C:\Users\montoyita\AppData\Local\Android\android-sdk
+
+PATHS
+C:\Users\montoyita\AppData\Local\Android\android-sdk\tools
+C:\Users\montoyita\AppData\Local\Android\android-sdk\platform-tools
+
+
+
+CORRER APP
+
+Emulador
+tns run android --emulator
+
+Genymotion/USB
+tns run android
+
+
+tns livesync android --watch
+

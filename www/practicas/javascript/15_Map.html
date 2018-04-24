@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Map</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+
+		
+		<script>
+			var numeros = [2,4,6,7,8];
+			var cuadrados = [];
+			
+			/*for (var i=0; i< numeros.length; i++) //for(var i = numeros.length-1; i>=0; i--)
+			{
+				var numero = numeros[i];
+				cuadrados.push(Math.pow(numero,2));
+			}*/
+
+			var cuadrados = numeros.map(function(elemento){
+				return elemento * elemento;
+			});
+
+			console.log(cuadrados);
+		</script>	
+	</body>
+</html>

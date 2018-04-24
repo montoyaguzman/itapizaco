@@ -1,0 +1,14 @@
+https://www.google.com.mx/search?q=conectar+pagina+web+a+camara&ie=utf-8&oe=utf-8&gws_rd=cr,ssl&ei=PDNHWfH4K4T8mAGUg53ICw
+
+
+http://www.forosdelweb.com/f18/php-controlar-hardware-909070/
+http://www.lawebdelprogramador.com/foros/PHP/825269-camaras-ip.html
+https://foro.elhacker.net/php/resuelto_controlar_hardware_de_acceso_desde_php-t426282.0.html
+http://profesores.elo.utfsm.cl/~agv/elo330/2s07/projects/OlgaGodoy/pagina.html
+https://cmop17.wordpress.com/2010/06/16/jmf-usando-camara-desde-java-y-guardando-imagen-en-archivo-o-bd/
+http://javayotros.blogspot.mx/2012/11/camara-ip-online-echa-en-java.html
+https://www.youtube.com/watch?v=mAgs942OuQc
+
+
+
+

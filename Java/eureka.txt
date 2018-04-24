@@ -1,0 +1,50 @@
+INICIO = 2628903
+FIN = 2647886
+
+import java.util.*;
+import java.lang.Math;
+
+class SumDigPower {
+    
+    public static List<Long> sumDigPow(long a, long b) {
+    
+        List<Long> eurekas = new ArrayList<Long>();
+        String stringAuxiliar = "";
+        int aux = 0;
+        long numeroAux = 0;
+        long potencia = 1;
+        long numeroTotal = 0;
+        
+        System.out.println("INICIO = " + a);
+        System.out.println("FIN = " + b);
+        System.out.println();
+        
+        for (long i = a; i < b; i++) {
+          stringAuxiliar = String.valueOf(i);
+          System.out.println("NUM = " + i);
+          for (int j=0; j<stringAuxiliar.length(); j++) {
+            if (stringAuxiliar.length() == 1) {
+              aux = Character.getNumericValue(stringAuxiliar.charAt(j));
+              numeroTotal = Long.valueOf(aux);
+              break;
+            } else {
+              aux = Character.getNumericValue(stringAuxiliar.charAt(j));
+              numeroAux = Long.valueOf(aux);
+              numeroAux = Long.valueOf((int)Math.pow(numeroAux, potencia));
+              numeroTotal += numeroAux;
+              potencia++;
+            }
+              
+          }
+          System.out.println(numeroTotal);
+          potencia = 1;
+          if (numeroTotal == i) {
+              eurekas.add(Long.valueOf(numeroTotal));
+          }
+          numeroTotal = 0;
+        }
+        
+        return eurekas;
+        
+    }
+}

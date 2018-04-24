@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>For each</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+		<!-- The forEach() method calls a provided function once for each element in an array, in order -->
+
+		<button onclick="numbers.forEach(myFunction)">Try it</button>
+		<p id="demo"></p>
+
+		<button onclick="pintarMensaje();">Pintar msj</button>
+		<p id="cuadro"></p>		
+
+		<script>
+			demoP = document.getElementById("demo");
+			var numbers = [4, 9, 16, 25];
+
+			function myFunction(item, index) {
+			    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+			}
+
+			function pintarMensaje(){
+				cuadro = document.getElementById("cuadro");
+				cuadro.innerHTML="Hola Jose";
+			}
+		</script>
+		</script>	
+	</body>
+</html>

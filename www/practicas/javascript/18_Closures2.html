@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Closures Contador de arreglos</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+		<p>Counting with a local variable.</p>
+
+		<button type="button" onclick="myFunction()">Count!</button>
+
+		<p id="demo">0</p>
+
+		<script>
+		//Error tipico	
+		/*var add = function () {
+		    var counter = 0;
+		   	return counter += 1;
+		    
+		};*/
+
+		//Solucion tipica
+		/*var add = (function () {
+		    var counter = 0;
+		    return function () {
+		    	return counter += 1;
+		    }
+		})();*/
+
+
+		var add = function(){
+			var counter = 0;
+		    var a = function () { 
+		    	return counter+=1;
+		    }
+			return a;
+		}();	
+
+		function myFunction(){
+		    document.getElementById("demo").innerHTML = add();
+		}
+		</script>
+		
+	</body>
+</html>

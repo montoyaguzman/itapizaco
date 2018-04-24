@@ -1,0 +1,6 @@
+1. Instalar nodejs
+2. Instalar JDK y SDK
+3. Instalar extension de chrome Ripple
+4. Instalar cordova npm install cordova -g (npm uninstall cordova -g)
+5. Crear un proyecto de cordova
+cordova create HolaMundo co.montoyita.HolaMundo "HolaMundo"

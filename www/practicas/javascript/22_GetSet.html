@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Getters y Setters</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+		<script>
+			var curso = {
+				titulo: "curso Javascript",
+				videos: 19,
+				tutor: "Uriel",
+				
+				getTutor(){
+					return this.tutor;
+				},
+				
+				setTutor: function(tutor){
+					if (tutor === "" || typeof tutor === "undefined"){
+						return this.tutor;
+					}
+					this.tutor = tutor;
+				}
+			}
+
+			console.log(curso.setTutor("Montoya"));
+			console.log(curso.getTutor());
+
+		</script>
+		
+	</body>
+</html>

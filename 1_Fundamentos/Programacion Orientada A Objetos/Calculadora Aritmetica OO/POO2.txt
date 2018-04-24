@@ -1,0 +1,66 @@
+CalculadoraA OperacionA = new OperacionA();
+	
+	BufferedReader br=new BufferedReader(new ImputStreamReader(System.in));
+	
+	System.out.println("Introduzca el primer  numero: ");
+	num1=Integer.parseInt(br.readLine());
+	System.out.println("Introduzca el segundo  numero: ");
+	num2=Integer.parseInt(br.readLine());
+	
+	CalculadoraA.leeVariableA(float a);
+	CalculadoraA.leeVariableB(float b);
+	CalculadoraA.realizaSuma();
+	CalculadoraA.realizaResta();
+	CalculadoraA.realizaMultiplicacion();
+	CalculadoraA.realizaDivision();
+	float result=CalculdoraA.muestraResult();
+
+	
+	//Metodos de entrada
+	public void eligeOperacion(char x)
+	{
+		operacion=x;
+	}
+		public void realizaOperacion()
+		{
+			float a,b;
+			BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+			
+			switch(operacion)
+			{
+			 	
+				case 1:
+				{
+			 		calculadoraA.realizaSuma();
+					result=Calculadora.muestraResult();
+			 	}
+			 	break;
+				case 2:
+			 	{
+			 		calculadoraA.realizaResta();
+					result=Calculadora.muestraResult();
+				}
+			 	break;
+			 	case 3:
+			 	{
+					calculadoraA.realizaMultiplicacion();
+					result=Calculadora.muestraResult();
+			 
+			 	}
+			 	break;
+				case 4:
+				{
+					calculadora.ArealizaDivision();
+					result=Calculadora.muestraResult();
+				}
+				default:
+				{
+					System.out.println("ESA OPERACION NO EXISTE");
+				}
+			}
+		}
+		public void imprimeResultado
+		{
+			 return result;
+		}
+	}

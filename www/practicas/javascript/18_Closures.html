@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Closures</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+	<button id="boton">Click</button>
+		
+		<script>
+
+			/*addEventListener element.addEventListener(event, function, useCapture);*/
+			(function(){
+				document.getElementById('boton').addEventListener("click",function(){
+					console.log("Hiciste click");
+				});
+			})
+			();
+
+			/* 
+				El método setTimeout () llama a una función o evalúa una expresión después tiempo.
+				*1000 ms = 1 segundo.
+				*La función sólo se ejecuta una vez. 
+				*Si es necesario repetir la ejecución, utilice el setInterval () método.
+				*Utilice la clearTimeout () método para prevenir la función se ejecute.
+			
+				setTimeout(function(){
+				console.log("Hola mundo!!");
+			},2000);
+			*/
+
+			setTimeout(function(){
+				console.log(holaMundo("Hola Jose!"));
+			},2000);
+
+			function holaMundo(nombre){
+				function construct(){
+					nombre = "Montoya";
+					return "Hola "+nombre;
+					return construct();
+				}
+			}
+
+		</script>
+		
+	</body>
+</html>

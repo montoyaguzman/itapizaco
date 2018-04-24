@@ -1,0 +1,13 @@
++Programa 3
+-23 fisico
+-28 emocional
+-33 intelectual
+-bioritmo
+
+FORMULA
+
+diasVividos = [(añoActual-añoNacimiento)(365.242189)] + [(diaActual-diaNacimiento)+[(mesActual-mesNacimiento)(365.242189/2)]]
+cicloFisico = sen(2*PI*diasVividos)/(23)
+cicloEmocional = sen(2*PI*diasVividos)/28)
+cicloIntelectual = sen(2*PI*diasVividos)/(33)
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.miClase{
+				background: red;
+				padding: 10px;
+			}
+
+			#div2{
+				background: blue;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	
+	<body>		
+
+		<div id="div1"></div>
+
+		<div class="clase2"></div>
+
+		<script>
+			var div = document.getElementById("div1");
+			div.classList.add("miClase");
+
+			var div2 = document.getElementsByClassName("clase2");
+			div2[0].setAttribute("id","div2");
+
+			var div3 = document.getElementsByTagName("div");
+			//console.log(div3);
+			//console.log(div3[1]);
+
+			//seleccionar con selectores CSS
+			var selector1 = document.querySelectorAll("div");
+			//console.log(selector1);
+
+			function $(selector1){
+				return document.querySelector(selector1);
+			}
+
+			var miClase1=$(".clase2");
+			console.log(miClase1);
+		</script>	
+	
+	</body>
+</html>

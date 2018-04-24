@@ -1,0 +1,33 @@
+﻿IONIC
+
+¿Qué es?
+
+Ionic es un framework para aplicaciones moviles hibridas que utiliza el web view pero puede empaquetarse para aplicaciones nativas tales como apk (android), iap (ios) y xap(windows phone).
+
+Cordova hace el enlace de app web a su funcion como aplicación nativa.
+
+Web view → Apache cordova → Sistema operativo
+
+Ionic es el frameword para html, css y javascrit. 
+El framework de Ionic para javascript es AngularJS.
+
+Requerimientos
+
+Cordova: Cordova es un framework de codigo abierto para desarrollo multiplataforma de aplicaciones moviles.
+npm: Gestor de paquetes de javascript.
+git: Software de control de versiones.
+Github: Es una plataforma de desarrollo colaborativo para alojar proyectos que usa el sistema de control de versiones Git.
+bower: .
+gulp: Es un automatizador de tareas. Minifica el codigo CSS y javascript, valida sintaxis y reduce el tiempo de carga de una pagina web.
+NodeJS: Es una plataforma para la utilización de javascript del lado del servidor, esta diseñado.
+Json: .
+
+SCM (Source Code Managment): Sistema de control de versiones.
+Forja: Plataforma de esarrollo colaborativo.
+
+
+
+
+
+
+

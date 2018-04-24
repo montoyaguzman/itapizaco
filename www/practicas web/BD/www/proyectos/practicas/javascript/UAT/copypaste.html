@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+
+	<form>
+		<p><input type="text" id="idEjemplo" onkeydown="return IsTeclaNumEdicion(event)" onkeypress="return IsNumber(event)" onpaste="validacionExtra(this, 'IsNumber');" /></p>
+	</form> 
+		
+		<script>
+		
+		function IsTeclaNumEdicion (e) {
+			tecla = (document.all) ? e.keyCode : e.which;
+			
+			if (isTeclaNumerica(tecla)) return true; //teclas de teclado numerico en teclados completos
+			if (isTeclaEdicion(tecla)) return true; //teclas de suprimir
+			if (isTeclaFlechaNavegacion(tecla)) return true; //teclas de flechas
+			
+		}
+		
+		function IsNumber(e) {
+		if (isTeclaCopiarPegar(e)) return true;
+		
+		tecla = (document.all) ? e.keyCode : e.which;
+		
+		if ((tecla==8) || (tecla==0) || (tecla==9) || (tecla==17)) return true;
+		if (tecla==241 || tecla==209 || tecla==13) return false;
+		
+		patron = /[0-9]/; // Solo acepta números
+
+		te = String.fromCharCode(tecla);
+		
+		return patron.test(te);
+	}
+		
+	
+		function validacionExtra(campo, funcionVal) {
+				
+			setTimeout(function(){
+				//alert(campo.value);
+				
+				var valor = campo.value;
+				var cadenaFinal = '';
+				var patron = /[\s]/;
+				
+				if ("IsTexto" == funcionVal) {
+					patron = /[\wáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ;:.¿?¡!#@,-_/\s]/; // Solo acepta números, letras, caracteres
+				}
+				
+				if ("IsNumber" == funcionVal) {
+					patron = /[0-9]/; // Solo acepta números
+				}
+				
+				if ("IsLetra" == funcionVal) {
+					patron = /[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ\s]/; // Solo acepta letras, espacio
+				}
+				
+				 for (var i = 0; i < valor.length; i++) {
+					caracter = valor.charAt(i);
+					if (patron.test(caracter)) {
+						cadenaFinal += caracter;
+						
+					}
+				} 
+				
+				campo.value = cadenaFinal;
+				
+			}, 5);
+		   
+		}
+	</script>
+	
+	</body>
+</html>

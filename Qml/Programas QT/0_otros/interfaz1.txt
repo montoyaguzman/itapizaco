@@ -1,0 +1,119 @@
+import QtQuick 2.8
+import QtQuick.Window 2.2
+
+Window {
+    visible: true
+    width: 725
+    height: 800
+
+
+    Rectangle {
+        width: 725
+        height: 725
+        color:"black"
+
+        Grid{
+            anchors.fill: parent
+            anchors.margins: 4
+            spacing: 2
+            width: 800
+            height: 800
+            columns: 40
+            rows: 40
+
+            Repeater{
+                model: 1600
+
+                Rectangle{
+                    id: celda
+                    width: 20
+                    height: 20
+
+                    property bool colores: true
+
+                    MouseArea{
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        function cambiocolor(){
+                            if(colores){
+                                celda.color = "#000000"//negro
+                            }else{
+                                celda.color = "#1FBDAD"//turqueza
+                            }
+                        }
+
+                        onEntered: {
+                            if(entered){
+                                colores = !colores
+                                cambiocolor()
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+*******************import QtQuick 2.8
+import QtQuick.Window 2.2
+
+Window {
+    id: root
+    width: 640
+    height: 640
+    title: qsTr("Game of life")
+    //property variant colorArray: ["#3A3522"]
+    property bool celAct: false
+
+    Grid{
+        anchors.fill: parent
+        anchors.margins: 4
+        rows:80
+        columns: 80
+        spacing: 1
+
+        Timer {
+          interval: 1000/60
+          running: true
+          repeat: true
+        }
+        Repeater {
+            model: 3360
+
+            Rectangle {
+                id:rec
+                x:0
+                y:2
+                width: 20; height: 20//tamaño de celdas(cuadritos)
+                color: "black"
+                //property int colorIndex: Math.floor(Math.random()*1)//(ag)
+//                color: root.colorArray["#3A3522"]
+               border.color: Qt.lighter(color)
+              /*  Text {
+                    anchors.centerIn: parent
+                    color: "#E6E6FA"
+                }*/
+                MouseArea{
+                    anchors.fill: parent
+                    onEntered: {
+                        rec.color="#1CEBE0";
+
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objetos con funciones</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+		<script>
+			function Tutor(nombre,apellido){
+				this.nombre=nombre;
+				this.saludar = function(){
+					console.log("Hola a todos soy "+this.nombre);
+				}
+
+				if(typeof apellido !== "undefined"){
+					this.nombreCompleto = nombre+" "+apellido;
+				}
+			}
+
+			var uriel = new Tutor("Uriel","Hernández");
+			
+			//Agregar un atributo al prototipo
+			Tutor.prototype.edad = 22;
+
+			
+			var jose = new Tutor("Jose");
+
+			//Agregar un metodo al obj Uriel
+			uriel.iniciar_tutorial = function() {
+				console.log("Bienvenidos a este nuevo tutorial!!");
+			};
+
+			console.log(uriel.edad);
+			console.log(jose.edad);
+
+			console.log(uriel.__proto__);
+		</script>
+		
+	</body>
+</html>

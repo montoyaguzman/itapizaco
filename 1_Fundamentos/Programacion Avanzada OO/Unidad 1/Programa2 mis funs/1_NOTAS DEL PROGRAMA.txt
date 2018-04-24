@@ -1,0 +1,8 @@
++Programa 2
+seno(Taylor)
+coseno(Taylor)
+potencia (n*n)
+primo true or false (ciclo de divisiones con break)
+fibonacci (algoritmo)
+perfecto (algoritmo)
+

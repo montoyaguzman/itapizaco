@@ -1,0 +1,13 @@
+      for(double x=diasVividos-20; x<=diasVividos+20; x+=0.01)
+      {       
+         y=(x*2*Math.PI)/23;
+                    
+           //x=x*28; 
+           //y=y*-1;
+         
+         System.out.println("X --> "+x+"    Y -->"+y);
+         
+         xx=(int)(x*20)+200;
+         yy=(int)(y*20)+200;
+         g.fillRect(xx+xc,yy,2,2);    
+      }

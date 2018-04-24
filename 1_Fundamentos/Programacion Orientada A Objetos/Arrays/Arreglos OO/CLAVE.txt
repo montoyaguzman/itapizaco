@@ -1,0 +1,14 @@
+public void leeArreglo2()
+	{
+		for(int i=0;i<10;i++) {
+		this.array2[i] = i*2;
+		}
+	}
+
+y en OperandoArreglos
+
+System.out.println("\nLos elementos del Array 2 son:\n");
+         for(int i=0; i<10; i++) {
+            ele.leeArreglo2();
+            System.out.println("array2["+i+"]="+ele.array2[i]);
+         }

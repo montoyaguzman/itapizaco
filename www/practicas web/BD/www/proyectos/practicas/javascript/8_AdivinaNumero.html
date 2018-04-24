@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Numero aleatorio</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>		
+
+		<p>Adivina el numero aleatorio</p>
+
+
+
+		<script>
+			var minimo = 1;
+			var maximo = 100;
+
+			var aleatorio = (Math.random()*(maximo-minimo))+1;
+
+			aleatorio=parseInt(aleatorio);
+
+			document.write(aleatorio);
+
+			var mensaje ="Ingresa el nummero que crees correcto (1-100)";
+			while(true){
+				var numeroIngresado=prompt(mensaje,"");
+				numeroIngresado=parseInt(numeroIngresado);
+			
+				if (numeroIngresado == aleatorio){
+					alert("Has ganado!!");
+					break;
+				}
+				else if (numeroIngresado==0){
+					break;
+				}
+				else if(numeroIngresado < aleatorio){
+					mensaje = "El numero magico es mayor a "+numeroIngresado;
+				}
+				else if (numeroIngresado > aleatorio){
+					mensaje = "El numero magico es menor "+numeroIngresado;
+				}
+			}
+
+		</script>	
+	
+	</body>
+</html>

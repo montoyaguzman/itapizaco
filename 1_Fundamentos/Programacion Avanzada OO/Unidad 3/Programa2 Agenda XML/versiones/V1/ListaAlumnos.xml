@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<escuela>
+    <alumnos>
+        <alumno>
+            <_Apellido>Hernandez</_Apellido>
+            <_Correo>Karlaa_h@outlook.es</_Correo>
+            <_Edad>19</_Edad>
+            <_Estatura>1.6</_Estatura>
+            <_Genero>Femenino</_Genero>
+            <_Id>1</_Id>
+            <_Nombre>Karla</_Nombre>
+            <_Peso>55</_Peso>
+            <_Telefono>2411220304</_Telefono>
+        </alumno>
+        <alumno>
+            <_Apellido>Montoya</_Apellido>
+            <_Correo>monty_libra@hotmail.com</_Correo>
+            <_Edad>23</_Edad>
+            <_Estatura>1.75</_Estatura>
+            <_Genero>Masculino</_Genero>
+            <_Id>1</_Id>
+            <_Nombre>Jose</_Nombre>
+            <_Peso>90</_Peso>
+            <_Telefono>2411596732</_Telefono>
+        </alumno>
+    </alumnos>
+    <clave>ITA2016</clave>
+    <nombre>Instituto Tecnologico de Apizaco</nombre>
+</escuela>

@@ -1,0 +1,32 @@
+1. Instalar phyton 2.7
+
+2. Configurar variable path de phyton
+C:\Python27
+
+3. Instalar aptana o jgrasp
+
+4. Instalar java de 32 bits y configurar en:
+C:\Users\montoyita\AppData\Roaming\Appcelerator\Aptana Studio
+
+y configurar el AptanaStudio3.ini asi:
+
+-startup
+plugins/org.eclipse.equinox.launcher_1.3.0.v20130327-1440.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212
+--launcher.XXMaxPermSize
+256m
+--launcher.defaultAction
+openFile
+-vm
+C:\Program Files (x86)\Java\jdk1.8.0_65\bin\javaw.exe
+-name
+Aptana Studio 3
+-vmargs
+-Xms128m
+-Xmx512m
+-Xverify:none
+-Declipse.p2.unsignedPolicy=allow
+-Declipse.log.size.max=10000
+-Declipse.log.backup.max=5
+-Djava.awt.headless=true
